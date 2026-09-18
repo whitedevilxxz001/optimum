@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Independent Local Deals — Internet &amp; TV | Call 888-524-2267</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Archivo:wght@400;600;700;900&amp;family=Space+Grotesk:wght@500;700;900&amp;display=swap">
+<style>
+  :root{
+    --optimum-blue:#00529B;
+    --optimum-light:#EBF3FA;
+    --navy:#0B1B33;
+    --white:#FFFFFF;
+    --muted:#5B6B85;
+    --yellow:#FFD100;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#F4F7FA;color:var(--navy);font-family:'Archivo',sans-serif;line-height:1.5;padding-bottom:85px;}
+  .display{font-family:'Archivo Black',sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:-.01em;}
+  button:focus-visible,a:focus-visible,details:focus-visible{outline:3px solid var(--optimum-blue);outline-offset:3px;}
+
+  /* Clear Independence Banner for Google Ads Policy */
+  .top-disclosure {
+    background: #111111;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.78rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--yellow);
+  }
+
+  .ticker{background:var(--optimum-blue);color:var(--white);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;padding:.65rem 1rem;white-space:nowrap;overflow:hidden;}
+  .ticker span{display:inline-block;animation:slide 18s linear infinite;}
+  @keyframes slide{from{transform:translateX(100%);}to{transform:translateX(-100%);}}
+  @media (prefers-reduced-motion: reduce){.ticker span{animation:none;}}
+
+  .hero{padding:2.5rem 1.25rem 2.5rem;text-align:center;}
+  
+  /* Super Prominent OPTIMUM Branding Badge */
+  .brand-badge {
+    display: inline-block;
+    background: var(--optimum-blue);
+    color: var(--white);
+    padding: 0.8rem 2.2rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,82,155,0.3);
+    border: 3px solid var(--yellow);
+  }
+  .brand-badge .brand-text {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(2.8rem, 10vw, 5.5rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+    color: var(--yellow);
+    text-shadow: 3px 3px 0px #000000;
+  }
+  .brand-badge .brand-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: clamp(0.75rem, 3.2vw, 1.2rem);
+    letter-spacing: 0.18em;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    display: block;
+  }
+
+  .hero h1{font-size:clamp(2.4rem,8vw,4.2rem);color:var(--optimum-blue);margin-top:0.5rem;}
+  .hero h1 .outline{color:transparent;-webkit-text-stroke:2.5px var(--optimum-blue);}
+  .hero p.sub{max-width:36rem;margin:1.3rem auto 0;font-size:1.15rem;font-weight:600;color:var(--navy);}
+  .hero .cta-row{margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:1rem 2rem;border-radius:14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;cursor:pointer;border:3px solid var(--optimum-blue);text-decoration:none;}
+  .btn-dark{background:var(--optimum-blue);color:var(--white);box-shadow:0 6px 16px rgba(0,82,155,0.25);}
+  .btn-light{background:var(--white);color:var(--optimum-blue);}
+  .btn:active{transform:translateY(2px);}
+
+  .stripe{background:var(--optimum-blue);color:var(--white);padding:2.8rem 1.25rem;text-align:center;}
+  .stripe h2{font-size:clamp(1.8rem,5.5vw,2.8rem);color:var(--white);}
+  .stripe p{max-width:34rem;margin:.9rem auto 0;color:#D0E4F7;font-size:1.1rem;}
+
+  .section{background:var(--white);padding:3.5rem 1.25rem;}
+  .section h2{font-size:clamp(1.8rem,6vw,2.6rem);margin-bottom:2rem;text-align:center;color:var(--optimum-blue);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;max-width:64rem;margin:0 auto;}
+  .card{border:2px solid var(--optimum-blue);border-radius:16px;padding:1.5rem;background:var(--white);box-shadow:0 4px 12px rgba(0,0,0,0.04);}
+  .card h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;margin:.6rem 0 .4rem;color:var(--optimum-blue);}
+  .card p{color:var(--muted);font-size:.98rem;}
+  .icon{width:48px;height:48px;border-radius:12px;background:var(--optimum-light);color:var(--optimum-blue);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+
+  .steps{background:var(--optimum-blue);color:var(--white);padding:3.5rem 1.25rem;}
+  .steps h2{color:var(--white);font-size:clamp(1.8rem,6vw,2.6rem);margin-bottom:2rem;text-align:center;}
+  .steps ol{list-style:none;max-width:36rem;margin:0 auto;display:grid;gap:1.2rem;}
+  .steps li{display:flex;gap:1.2rem;align-items:flex-start;background:#00407A;border-radius:16px;padding:1.2rem 1.4rem;border:1px solid rgba(255,255,255,0.1);}
+  .num{font-family:'Archivo Black',sans-serif;font-size:1.3rem;color:var(--optimum-blue);background:var(--white);border-radius:10px;min-width:2.6rem;height:2.6rem;display:flex;align-items:center;justify-content:center;}
+  .steps li strong{display:block;font-size:1.05rem;color:#FFFFFF;}
+  .steps li span{color:#D0E4F7;font-size:.95rem;}
+
+  .faq{background:var(--white);padding:3.5rem 1.25rem;}
+  .faq h2{font-size:clamp(1.8rem,6vw,2.6rem);margin-bottom:1.8rem;text-align:center;color:var(--optimum-blue);}
+  .faq details{max-width:38rem;margin:0 auto .9rem;border:2px solid var(--optimum-blue);border-radius:14px;padding:1.1rem 1.3rem;}
+  .faq summary{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--optimum-blue);}
+  .faq p{margin-top:.6rem;color:var(--muted);font-size:.98rem;}
+
+  .final{background:var(--optimum-light);padding:3.5rem 1.25rem 2.5rem;text-align:center;}
+  .final h2{font-size:clamp(2.2rem,7.5vw,3.5rem);color:var(--optimum-blue);}
+  .final p{margin:1rem auto 1.8rem;max-width:32rem;font-weight:600;font-size:1.1rem;}
+  .final .cta-row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;}
+
+  .terms{background:var(--white);padding:3.5rem 1.25rem;}
+  .terms h2{font-size:clamp(1.6rem,5vw,2.2rem);margin-bottom:1.8rem;text-align:center;color:var(--optimum-blue);}
+  .terms-box{max-width:42rem;margin:0 auto;border:2px solid var(--optimum-blue);border-radius:16px;padding:1.6rem;background:var(--optimum-light);}
+  .terms-box h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;margin:1.2rem 0 .4rem;color:var(--optimum-blue);}
+  .terms-box h3:first-child{margin-top:0;}
+  .terms-box p,.terms-box li{font-size:.92rem;color:var(--navy);}
+  .terms-box ul{padding-left:1.2rem;margin:.3rem 0 .6rem;}
+
+  .disclaimer{background:var(--optimum-blue);color:#D0E4F7;text-align:center;font-size:.78rem;padding:1.4rem 1.25rem;line-height:1.6;padding-bottom:95px;}
+
+  /* Floating Sticky Call Bar at Bottom */
+  .callbar{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:999;
+    background:var(--optimum-blue);
+    border-top:3px solid var(--yellow);
+    padding:.8rem 1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 -4px 20px rgba(0,0,0,0.2);
+  }
+  .callbar .btn-sticky{
+    background:var(--yellow);
+    color:var(--navy);
+    border:2px solid var(--white);
+    width:100%;
+    max-width:420px;
+    font-size:1.15rem;
+    font-weight:900;
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    animation:pulse 2s infinite;
+  }
+
+  /* Floating Sticky Circular Call Button (Bottom Right) */
+  .floating-call-btn {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--yellow);
+    color: var(--navy);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+    text-decoration: none;
+    border: 3px solid var(--optimum-blue);
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-disclosure">
+  Independent Marketing Partner. Not affiliated directly with Optimum or Cablevision.
+</div>
+
+<div class="ticker"><span>⚡ FAST INTERNET &nbsp;•&nbsp; 📺 TV PACKAGES &nbsp;•&nbsp; 📞 CALL 888-524-2267 &nbsp;•&nbsp; 🏠 LOCAL SERVICE ASSISTANCE &nbsp;•&nbsp; ⚡ FAST INTERNET &nbsp;•&nbsp; 📺 TV PACKAGES &nbsp;•&nbsp; 📞 CALL 888-524-2267</span></div>
+
+<header class="hero">
+  <!-- Prominent Branding Badge (Compliant) -->
+  <div class="brand-badge">
+    <span class="brand-text">OPTIMUM</span>
+    <span class="brand-sub">INDEPENDENT LOCAL AGENT</span>
+  </div>
+
+  <h1 class="display">Best Local<br><span class="outline">Deals,</span><br>Fast Setup.</h1>
+  <p class="sub">Internet, TV, and home phone — bundled the way your household actually uses them. One tap to call, and we check availability at your address.</p>
+  <div class="cta-row">
+    <a class="btn btn-dark" href="tel:+18885242267">📞 Call 888-524-2267</a>
+    <a class="btn btn-light" href="#how">How it works</a>
+  </div>
+</header>
+
+<section class="stripe">
+  <h2 class="display">One call. Zero confusion.</h2>
+  <p>Forget hold music and chatbots. You talk to an independent local representative who checks current Optimum offers and helps process your request.</p>
+</section>
+
+<section class="section">
+  <h2 class="display">Available Local Services</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>High-speed Internet</h3>
+      <p>Fiber and cable speeds for streaming, gaming, and work-from-home — matched to your usage, not oversold.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📺</div>
+      <h3>TV Packages</h3>
+      <p>Live TV, sports, and on-demand lineups. We help you skip the channels you'd never watch.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Bundles &amp; Savings</h3>
+      <p>Combine Optimum internet, TV, and phone and ask about current promotions and new-customer offers.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Local, Hands-on Help</h3>
+      <p>Installation scheduling, equipment questions, and follow-up — from independent service assistants.</p>
+    </div>
+  </div>
+</section>
+
+<section class="steps" id="how">
+  <h2 class="display">How It Works</h2>
+  <ol>
+    <li>
+      <span class="num">1</span>
+      <div><strong>Tap the Call Button</strong><span>Your phone dials 888-524-2267 instantly — takes under a minute.</span></div>
+    </li>
+    <li>
+      <span class="num">2</span>
+      <div><strong>We Check Your Address</strong><span>Same-day answer on what Optimum plans are available and current rates.</span></div>
+    </li>
+    <li>
+      <span class="num">3</span>
+      <div><strong>You Get Connected</strong><span>We assist in setting up your order and installation schedule seamlessly.</span></div>
+    </li>
+  </ol>
+</section>
+
+<section class="faq">
+  <h2 class="display">Quick Answers</h2>
+  <details>
+    <summary>Are you an authorized Optimum reseller?</summary>
+    <p>No — we are an independent marketing partner and local service dealer. We help you find the right Optimum plan for your home and walk you through signing up directly. Optimum provides the service; we provide local, personal assistance.</p>
+  </details>
+  <details>
+    <summary>Do you handle installation?</summary>
+    <p>We coordinate and schedule the installation directly with the provider. Most homes get connected within days of the order.</p>
+  </details>
+  <details>
+    <summary>What does it cost?</summary>
+    <p>Prices change with current promotions, so we quote live pricing for your address — no hidden surprises on the bill.</p>
+  </details>
+</section>
+
+<section class="final" id="contact">
+  <h2 class="display">Ready For OPTIMUM?</h2>
+  <p>Tap to call now and get a free, no-pressure quote for your home.</p>
+  <div class="cta-row">
+    <a class="btn btn-dark" href="tel:+18885242267">📞 Call now: 888-524-2267</a>
+  </div>
+</section>
+
+<section class="terms" id="terms">
+  <h2 class="display">Terms &amp; Conditions</h2>
+  <div class="terms-box">
+    <h3>1. Who we are</h3>
+    <p>We are an independent marketing partner and advertising service. We are not an authorized Optimum retailer, reseller, or affiliate. Optimum provides the service directly to you under its own terms.</p>
+    <h3>2. Pricing &amp; offers</h3>
+    <p>Plan availability, speeds, pricing, and promotions vary by address and change without notice. Any quote given by phone is valid only at the time it is provided. Final pricing is confirmed by Optimum at signup.</p>
+    <h3>3. No obligation</h3>
+    <ul>
+      <li>Quotes and consultations are free and come with no purchase obligation.</li>
+      <li>Service contracts, equipment leases, and cancellation terms are set by Optimum, not by us.</li>
+    </ul>
+    <h3>4. Calls &amp; texts</h3>
+    <p>By calling or texting 888-524-2267 you consent to be contacted at that number regarding your inquiry. Standard message and call rates from your carrier may apply.</p>
+    <h3>5. Trademarks</h3>
+    <p>Optimum and related names are trademarks of their respective owner. This site is for local advertising and customer assistance only and is not endorsed by, or affiliated with, Optimum.</p>
+    <h3>6. Liability</h3>
+    <p>We provide information in good faith and are not liable for service outages, billing disputes, or contract matters, which are handled directly between you and Optimum.</p>
+  </div>
+</section>
+
+<footer class="disclaimer">
+  Independent marketing site. Not an authorized Optimum retailer or affiliate. Optimum is a trademark of its respective owner; this site is for local advertising and customer assistance only. Plan availability, pricing, and promotions vary by address.
+</footer>
+
+<!-- Floating Call Icon (Bottom Right) -->
+<a href="tel:+18885242267" class="floating-call-btn" title="Call Now">📞</a>
+
+<!-- Sticky Bottom Call Bar -->
+<div class="callbar">
+  <a class="btn btn-sticky" href="tel:+18885242267">📞 Call 888-524-2267</a>
+</div>
+
+</body>
+</html>
